@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -16,11 +17,12 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText user_email, user_password;
     private FirebaseAuth mAuth;
-    private Button btnLogin, btnSignUp;
+    private Button btnLogin;
+    private TextView signup_txt;
 
 
     @Override
@@ -38,20 +40,16 @@ public class MainActivity extends AppCompatActivity {
             finish();
         }
 
+        //Get Firebase auth instance
+        mAuth = FirebaseAuth.getInstance();
+
         user_email = (EditText) findViewById(R.id.email);
         user_password = (EditText) findViewById(R.id.editTextTextPassword);
         btnLogin = (Button) findViewById(R.id.btn_login);
-        btnSignUp = (Button) findViewById(R.id.btn_signup);
+        signup_txt = findViewById(R.id.signup_txt);
+        signup_txt.setOnClickListener(this);
 
 
-        btnSignUp.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Signup.class));
-
-            }
-        });
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,6 +91,15 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.signup_txt:
+                startActivity(new Intent(this, Signup.class));
+        }
 
     }
 }
