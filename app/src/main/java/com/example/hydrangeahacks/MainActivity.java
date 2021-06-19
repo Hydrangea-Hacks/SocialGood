@@ -43,6 +43,16 @@ public class MainActivity extends AppCompatActivity {
         btnLogin = (Button) findViewById(R.id.btn_login);
         btnSignUp = (Button) findViewById(R.id.btn_signup);
 
+
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Signup.class));
+
+            }
+        });
+
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,14 +89,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 });
-                btnSignUp.setOnClickListener(new View.OnClickListener() {
 
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(MainActivity.this, Signup.class));
-
-                    }
-                });
 
             }
         });
