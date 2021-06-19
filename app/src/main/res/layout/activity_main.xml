@@ -51,7 +51,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"
-            android:text="Register"
+            android:text="Not a user? Register here"
             android:textAllCaps="false"
             android:textColor="@color/white"
             app:backgroundTint="#2196F3" />
