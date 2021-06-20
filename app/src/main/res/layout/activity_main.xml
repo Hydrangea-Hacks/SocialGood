@@ -67,11 +67,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="152dp"
-        android:layout_height="98dp"
-        app:srcCompat="@android:drawable/btn_star_big_on"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="50dp" />
+        android:layout_width="222dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rxchange__hydrangea_hacks" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
