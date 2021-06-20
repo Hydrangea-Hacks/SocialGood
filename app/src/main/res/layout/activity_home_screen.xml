@@ -12,7 +12,7 @@
         android:id="@+id/linearLayout3"
         android:layout_width="412dp"
         android:layout_height="54dp"
-        android:background="@color/black"
+        android:background="@color/cream"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -40,23 +40,45 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="315dp"
-        android:layout_height="100dp"
+        android:layout_width="249dp"
+        android:layout_height="140dp"
         android:background="@color/purple_500"
-        android:text="TextView"
+        android:singleLine="false"
+        android:text="We require clothes urgently for Christmas . Please donate as soon as possible"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.427" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="249dp"
+        android:layout_height="140dp"
+        android:background="@color/purple_500"
+        android:singleLine="false"
+        android:text="We require clothes urgently for Christmas . Please donate as soon as possible"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="315dp"
-        android:layout_height="100dp"
+        android:layout_width="253dp"
+        android:layout_height="137dp"
         android:layout_marginTop="34dp"
         android:background="@color/purple_500"
-        android:text="TextView2"
+        android:text="its Winter time , Please Donate shawls and jackets . Please donate as much as you can! "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
