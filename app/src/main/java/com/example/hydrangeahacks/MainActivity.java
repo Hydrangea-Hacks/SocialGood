@@ -99,7 +99,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.signup_txt:
                 startActivity(new Intent(this, Signup.class));
-        }
-
+    }
     }
 }
