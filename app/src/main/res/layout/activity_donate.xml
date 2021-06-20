@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/medsTxt"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cream"
@@ -10,47 +11,134 @@
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="137dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="371dp"
+        android:layout_width="123dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="377dp"
+        android:layout_marginEnd="67dp"
         android:background="@color/cream"
-        android:src="@mipmap/tshirt_foreground" />
+        android:src="@mipmap/tshirt_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="115dp"
         android:layout_height="105dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="248dp"
-        android:layout_marginTop="221dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="200dp"
         android:background="@color/cream"
-        android:src="@mipmap/medkit_foreground" />
+        android:src="@mipmap/medkit_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="115dp"
         android:layout_height="105dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_marginStart="66dp"
-        android:layout_marginTop="224dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="67dp"
         android:background="@color/cream"
-        android:src="@mipmap/meds_foreground" />
+        android:onClick="onClick"
+        android:src="@mipmap/meds_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton4"
-        android:layout_width="115dp"
-        android:layout_height="105dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="254dp"
-        android:layout_marginTop="367dp"
+        android:layout_width="105dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="256dp"
+        android:layout_marginTop="384dp"
         android:background="@color/cream"
-        android:src="@mipmap/clothes_foreground" />
+        android:src="@mipmap/clothes_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginBottom="288dp"
+        android:text="Medicine"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <TextView
+        android:id="@+id/medkitTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="286dp"
+        android:text="Healthcare Supplies"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        tools:layout_editor_absoluteX="238dp" />
+
+    <TextView
+        android:id="@+id/clothesTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginBottom="111dp"
+        android:text="Clothes"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <TextView
+        android:id="@+id/miscTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="294dp"
+        android:layout_marginBottom="110dp"
+        android:text="Other"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        tools:layout_editor_absoluteX="285dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:background="#FBC02D"
+        android:padding="10dp"
+        android:text="DONATIONS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#D32F2F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="133dp"
+        android:text="Select the choice most closely matches your donation"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="103dp" />
 
     <TextView
         android:id="@+id/textView4"
