@@ -40,8 +40,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="249dp"
-        android:layout_height="140dp"
+        android:layout_width="243dp"
+        android:layout_height="144dp"
         android:background="@color/purple_500"
         android:singleLine="false"
         android:text="We require clothes urgently for Christmas . Please donate as soon as possible"
@@ -50,9 +50,10 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.427" />
+        app:layout_constraintVertical_bias="0.56" />
 
     <TextView
         android:id="@+id/textView3"
@@ -66,10 +67,9 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.064" />
+        app:layout_constraintVertical_bias="0.224" />
 
     <TextView
         android:id="@+id/textView2"
@@ -84,6 +84,18 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="152dp"
+        android:layout_height="70dp"
+        android:background="@color/cream"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Announcements!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

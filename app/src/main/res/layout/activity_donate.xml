@@ -145,48 +145,10 @@
         android:layout_width="98dp"
         android:layout_height="52dp"
         android:layout_alignTop="@+id/imageButton2"
-        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="262dp"
-        android:layout_marginEnd="213dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="495dp"
         android:text="Clothes" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="98dp"
-        android:layout_height="52dp"
-        android:layout_alignTop="@+id/imageButton2"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="265dp"
-        android:layout_marginTop="262dp"
-        android:layout_marginEnd="48dp"
-        android:text="Miscallaneous" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="133dp"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageButton2"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="245dp"
-        android:layout_marginTop="104dp"
-        android:layout_marginEnd="33dp"
-        android:text="Health care supplies" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="98dp"
-        android:layout_height="52dp"
-        android:layout_alignTop="@+id/imageButton2"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="102dp"
-        android:layout_marginEnd="237dp"
-        android:text="medicines" />
 
 
 </RelativeLayout>
