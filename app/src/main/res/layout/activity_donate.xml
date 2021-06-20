@@ -41,6 +41,7 @@
         android:layout_marginTop="200dp"
         android:layout_marginEnd="67dp"
         android:background="@color/cream"
+        android:onClick="onClick"
         android:src="@mipmap/meds_foreground"
         app:layout_constraintEnd_toStartOf="@+id/imageButton2"
         app:layout_constraintHorizontal_bias="0.0"
